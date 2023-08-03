@@ -13,11 +13,13 @@ const Navbar = () => {
           <img src={logo} />
         </div>
         <div className="navbar-links_container">
-          <p><a href="#home">Home</a></p>
-          <p><a href="#wgpt3">What is GPT3?</a></p>
-          <p><a href="#possibility">Open AI</a></p>
-          <p><a href="#features">Case Studies</a></p>
-          <p><a href="#blog">Library</a></p>
+            <ul className="navbar-ul_container">
+              <li><a href="#about">About</a></li>
+              <li><a href="#certifications">Certifications</a></li>
+              <li><a href="#achievements">Achievments</a></li>
+              <li><a href="#resume">See My Resume</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
       </div>
       <div className="navbar-menu">
@@ -27,11 +29,11 @@ const Navbar = () => {
         {toggleMenu && (
         <div className="navbar-menu_container scale-up-center">
           <div className="navbar-menu_container-links">
-            <p><a href="#home">Home</a></p>
-            <p><a href="#wgpt3">What is GPT3?</a></p>
-            <p><a href="#possibility">Open AI</a></p>
-            <p><a href="#features">Case Studies</a></p>
-            <p><a href="#blog">Library</a></p>
+            <p><a href="#home">About</a></p>
+            <p><a href="#wgpt3">Certifications</a></p>
+            <p><a href="#possibility">Achievments</a></p>
+            <p><a href="#blog">See My Resume</a></p>
+            <p><a href="#features">Contact</a></p>
           </div>
         </div>
         )}

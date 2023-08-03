@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 $("#showOne").show()
 $("#weekbutton1").addClass('current')
 $(document).ready(function(){

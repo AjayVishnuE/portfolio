@@ -8,6 +8,10 @@
     backdrop-filter: blur( 9px );
     -webkit-backdrop-filter: blur( 9px );
 }
+
+a{
+    text-decoration: none;
+}
 /* asdfghj */
 .navbar-links {
     flex: 1;    
@@ -27,6 +31,18 @@
 .navbar-links_container {
     display: flex;
     flex-direction: row;
+}
+
+.navbar-ul_container{
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.navbar-ul_container> li > a{
+    padding: 0 30px 0 30px;
 }
 
 .navbar-sign {
@@ -68,7 +84,7 @@
     position: absolute;
     right: 0;
     top: 40px;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     min-width: 210px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
