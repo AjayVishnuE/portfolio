@@ -12,6 +12,9 @@ const Navbar = () => {
         <div className="navbar-links_logo">
           <img src={logo} />
         </div>
+        <div class="nav-center">
+
+        </div>
         <div className="navbar-links_container">
             <ul className="navbar-ul_container">
               <li><a href="#about">About</a></li>

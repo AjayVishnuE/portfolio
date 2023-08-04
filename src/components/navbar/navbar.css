@@ -1,9 +1,10 @@
 .navbar {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 6rem;
-    position:static;
+    padding: 1.2rem 6rem;
+    position:fixed;
     background: rgba( 6, 87, 196, 0.3 );
     backdrop-filter: blur( 9px );
     -webkit-backdrop-filter: blur( 9px );
@@ -26,6 +27,10 @@ a{
 
 .navbar-links_logo img {
     height: 50px;
+}
+
+.nav-center{
+    width: 30%;
 }
 
 .navbar-links_container {
@@ -94,6 +99,13 @@ ul{
     margin: 1rem 0;
 }
 
+@media screen and (max-width: 1250px) {
+
+    .nav-center{
+        width: 20%;
+    }
+
+}
 @media screen and (max-width: 1050px) {
     .navbar-links_container {
         display: none;
@@ -101,6 +113,10 @@ ul{
 
     .navbar-menu {
         display: flex;
+    }
+
+    .nav-center{
+       display: none;
     }
 }
 

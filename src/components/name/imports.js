@@ -1,5 +1,5 @@
 import $ from 'jquery';
-    
+
 $(function(){
 	$('.repeat').click(function(){
     	var classes =  $(this).parent().attr('class');
@@ -10,3 +10,4 @@ $(function(){
         }, 20);
     });
 });
+
