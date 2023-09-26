@@ -1,13 +1,10 @@
 .navbar {
+    background-color: rgb(0, 0, 0);
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 6rem;
-    position:fixed;
-    background: rgba( 6, 87, 196, 0.3 );
-    backdrop-filter: blur( 9px );
-    -webkit-backdrop-filter: blur( 9px );
+    position:static;
+    padding:1.5rem 3.5rem;
 }
 
 a{
@@ -15,8 +12,12 @@ a{
 }
 /* asdfghj */
 .navbar-links {
+    background-color: rgb(51, 51, 51);
+    border-radius: 5px;
+    margin:0;
+    padding:1rem 1rem;
     flex: 1;    
-    display: flex;
+    display: flex;  
     justify-content: flex-start;
     align-items: center;
 }
@@ -30,7 +31,7 @@ a{
 }
 
 .nav-center{
-    width: 30%;
+    width: 40%;
 }
 
 .navbar-links_container {
@@ -48,6 +49,9 @@ ul{
 
 .navbar-ul_container> li > a{
     padding: 0 30px 0 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: lightgray;
 }
 
 .navbar-sign {
@@ -69,7 +73,11 @@ ul{
 }
 
 .navbar-menu {
-    margin-left: 1rem;
+    margin-left: 0rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px ;
+    background-color:  rgb(51, 51, 51);
+    padding:1.4rem 20px 1.45rem 0;
     display: none;
     position: relative;
 }
@@ -88,25 +96,29 @@ ul{
     padding: 2rem;
     position: absolute;
     right: 0;
-    top: 40px;
+    top: 60px;
     margin-top: 1.5rem;
-    min-width: 210px;
+    min-width: 200px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
 }
 
 .navbar-menu_container p {
-    margin: 1rem 0;
+    margin: 0rem 0;
 }
 
 @media screen and (max-width: 1250px) {
-
     .nav-center{
         width: 20%;
     }
 
 }
 @media screen and (max-width: 1050px) {
+    .navbar-links{
+        border-radius: 0;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
     .navbar-links_container {
         display: none;
     }
@@ -122,16 +134,13 @@ ul{
 
 @media screen and (max-width: 700px) {
     .navbar {
-        padding: 2rem 4rem;
+        padding: 1rem 1rem;
     }
 }
 
 @media screen and (max-width: 550px) {
     .navbar {
-        padding:1rem 2rem;
+        padding:1rem 1rem;
     }
 
-    .navbar-menu_container {
-        top: 20px;
-    }
 }

@@ -1,0 +1,49 @@
+.spotlight{
+    background-color: black;
+    height:100vh;
+    padding: 3.5rem 3.5rem;
+}
+
+h1{
+    color:white;
+    font-size: 80px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.a{
+    padding: 0;
+}
+h2{
+    color: white;
+    font-weight: 400;
+    margin: 0;
+}
+
+.line2{
+    color: lightgray;
+}
+
+.namesection{
+
+}
+
+.resumesection{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.resumebtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color:rgb(55, 189, 107);
+}
+
+.resumebtn > a{
+    padding: 0;
+    margin: 0;
+}
